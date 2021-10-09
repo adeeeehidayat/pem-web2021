@@ -1,0 +1,9 @@
+Nama		: Septian Ade Hidayat
+NIM		: A11.2021.13294
+Kelas		: A11.4103
+Mata kuliah 	: Pemrograman berbasis web
+
+membuat akun github
+membuat repositori di github
+mengisi repositori dengan file sample dengan format bebas, misal file.txt
+mengirim url link repositori github
