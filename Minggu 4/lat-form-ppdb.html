@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Formulir PPDB Jalur Zonasi Tahun 2020 SMA Negeri 1 Kaliwungu</title>
+</head>
+<body>
+  <style>
+    body {
+    background-color: rgb(245, 245, 245);
+    }
+    input[type=text], [type=number], [type=date], [type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    }
+    textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    }
+    input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    }
+    input[type=reset] {
+    width: 100%;
+    background-color: #f54343;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    }
+    input[type=file] {
+    width: 95%;
+    background-color: #3b5cf3;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    }
+    h2 {
+    text-align: center;
+    font-family: helvetica;
+    }
+    td {
+    font-family: helvetica;
+    font-size: large;
+    }
+  </style>
+<h2><img src="logojateng.png" alt="logojateng" width="180px" height="140px" style="float: left;"><img src="logosmanka.png" alt="logosmanka" width="144px" height="190px" style="float: right;">FORMULIR PPDB JALUR ZONASI TAHUN AJARAN 2020/2021<br>SMA NEGERI 1 KALIWUNGU<br>KENDAL</h2>
+<table>
+  <form action="proses.php" method="post" target="_blank" name="fppdb">
+  <tr>
+    <td>
+      <h3>INFO PENDAFTARAN</h3>
+    </td>
+  </tr>
+  <tr>
+    <td><label for="fnisn">1. NISN</label></td>
+    <td><input type="number" id="fnisn" name="fnisn" placeholder="Masukkan NISN..." required></td>
+  </tr>
+  <tr>
+    <td><label for="asalsekolah">2. Asal sekolah</label></td>
+    <td><input type="text" id="asalsekolah" name="asalsekolah" size="100" required></td>
+  </tr>
+  <tr>
+    <td><label for="tlulus">3. Tahun Lulus</label></td>
+    <td><input type="number" id="tlulus" name="tlulus" required></td>
+  </tr>
+  <tr>
+    <td><label for="fcijazah"><i>(lampirkan foto copy Ijazah)</i></label></td>
+    <td><input type="file" id="fcijazah" name="fcijazah" required></td>
+  </tr>
+  <tr>
+    <td>
+      <h3>DATA CALON PESERTA</h3>
+    </td>
+  </tr>
+  <tr>
+    <td><label for="nlengkap">4. Nama Lengkap</label></td>
+    <td><input type="text" id="nlengkap" name="nlengkap" size="100" placeholder="Masukkan Nama Lengkap..." required></td>
+  </tr>
+  <tr>
+    <td><label for="nik">5. NIK</label></td>
+    <td><input type="number" id="nik" name="nik" size="100" placeholder="Masukkan NIK..." required></td>
+  </tr>
+  <tr>
+    <td><label for="tplahir">6. Tempat lahir</label></td>
+    <td><input type="text" id="tplahir" name="tplahir" size="100" required></td>
+  </tr>
+  <tr>
+    <td><label for="tglahir">7. Tanggal Lahir</label></td>
+    <td><input type="date" id="tglahir" name="tglahir" required></td>
+  </tr>
+  <tr>
+    <td><label for="fcakte"><i>Foto Copy Akte Kelahiran<br>Yang Telah Dilegalisir<br>(Di Lampirkan)</i></label></td>
+    <td><input type="file" id="fcakte" name="fcakte" required></td>
+  </tr>
+  <tr>
+    <td rowspan="2"><label for="jkelamin">8. Jenis Kelamin</label></td>
+    <td><input type="radio" id="Laki-laki" name="jkelamin" value="Laki-laki" required><label for="Laki-laki">Laki-laki</label></td>
+  <tr>
+    <td><input type="radio" id="Perempuan" name="jkelamin" value="Perempuan" required><label for="Perempuan">Perempuan</label></td>
+  </tr>
+  <tr>
+    <td><label for="alamat">9. Alamat</label></td>
+    <td><textarea cols="97" rows="3" placeholder="Masukkan Alamat Calon Peseta Didik Baru..." required></textarea></td>
+  </tr>
+  <tr>
+    <td><label for="desa">10. Desa/Kel.</label></td>
+    <td><input type="text" id="desa" name="desa" size="100" required></td>
+  </tr>
+  <tr>
+    <td><label for="kecamatan">11. Kecamatan</label></td>
+    <td><input type="text" id="kecamatan" name="kecamatan" size="100" required></td>
+  </tr>
+  <tr>
+    <td><label for="kabupaten">12. Kabupaten</label></td>
+    <td><input type="text" id="kabupaten" name="kabupaten" size="100" required></td>
+  </tr>
+  <tr>
+    <td><label for="provinsi">13. Provinsi</label></td>
+    <td><input type="text" id="provinsi" name="provinsi" size="100" required></td>
+  </tr>
+  <tr>
+    <td><label for="email">14. Email Aktif</label></td>
+    <td><input type="email" id="email" name="email" size="100" required></td>
+  </tr>
+  <tr>
+    <td>
+    <h3>DATA ORANG TUA</h3><p><i>(lampirkan KK)</i></p>
+    </td>
+    <td><label for="fckk"></label><input type="file" id="fckk" name="fckk" required></td>
+  </tr>
+  <tr>
+    <td><label for="nomorkk">15. Nomor Kartu Keluarga</label></td>
+    <td><input type="number" id="nomorkk" name="nomorkk" required></td>
+  </tr>
+  <tr>
+    <td><label for="ayahkandung">16. Nama Ayah Kandung</label></td>
+    <td><input type="text" id="ayahkandung" name="ayahkandung" size="100" required></td>
+  </tr>
+  <tr>
+    <td><label for="agamaayah">17. Agama</label></td>
+    <td><input type="text" id="agamaayah" name="agamaayah" size="100" required></td>
+  </tr>
+  <tr>
+    <td><label for="pekerjaanayah">18. Pekerjaan</label></td>
+    <td><input type="text" id="pekerjaanayah" name="pekerjaanayah" size="100" required></td>
+  </tr>
+  <tr>
+    <td><label for="ibu kandung">19. Nama Ibu Kandung</label></td>
+    <td><input type="text" id="ibukandung" name="ibukandung" size="100" required></td>
+  </tr>
+  <tr>
+    <td><label for="agamaibu">20. Agama</label></td>
+    <td><input type="text" id="agamaibu" name="agamaibu" size="100" required></td>
+  </tr>
+  <tr>
+    <td><label for="pekerjaanibu">21. Pekerjaan</label></td>
+    <td><input type="text" id="pekerjaanibu" name="pekerjaanibu" size="100" required></td>
+  </tr>
+  <tr>
+    <td><label for="alamatortu">22. Alamat</label></td>
+    <td><textarea cols="97" rows="3" placeholder="Masukkan Alamat Orang Tua Calon Peseta Didik Baru..." required></textarea></td>
+  </tr>
+  <tr>
+    <td><label for="desaortu">23. Desa/Kel.</label></td>
+    <td><input type="text" id="desaortu" name="desaortu" size="100" required></td>
+  </tr>
+  <tr>
+    <td><label for="kecamatanortu">24. Kecamatan</label></td>
+    <td><input type="text" id="kecamatanortu" name="kecamatanortu" size="100" required></td>
+  </tr>
+  <tr>
+    <td><label for="kabupatenortu">25. Kabupaten</label></td>
+    <td><input type="text" id="kabupatenortu" name="kabupatenortu" size="100" required></td>
+  </tr>
+  <tr>
+    <td><label for="provinsiortu">26. Provinsi</label></td>
+    <td><input type="text" id="provinsiortu" name="provinsiortu" size="100" required></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><input type="submit" value="Selesai/Kirim" style="font-size: large;"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><input type="reset" value="Reset" style="font-size: large;"></td>
+  </tr>
+  </form>
+</table>
+</body>
+</html>
