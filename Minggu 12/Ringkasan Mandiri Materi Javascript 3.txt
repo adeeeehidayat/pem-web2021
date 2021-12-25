@@ -1,0 +1,36 @@
+melanjutkan latihan javascript yang ke 3
+belajar tentang DOM (Document Object Model)
+1. Implementasi DOM
+1.1 Mengakses elemen tertentu dengan DOM
+
+Beberapa fungsi pengaksesan dasar :
+a. getElementById() memilih elemen berdasarkan atribut id. 
+b. getElementByName() memilih elemen berdasarkan atribut name. 
+c. getElementByClassName() memilih elemen berdasarkan atribut class. 
+d. getElementByTagName() memilih elemen berdasarkan nama tag. 
+e. getElementByTagNameNS() memilih elemen berdasarkan nama tag. 
+f. querySelector() memilih elemen berdasarkan query. 
+g. querySelectorAll() memilih elemen berdasarkan query. 
+h. dan lain-lain.
+
+2. Membuat Elemen dengan DOM API
+a. menambahkan elemen dengan menggunakan fungsi append()
+b. menghapusnya dapat menggunakan fungsi remove(). 
+
+3. FUNGSI JAVASCRIPT (function)
+Ada 4 cara yang bisa dilakukan untuk membaut fungsi di Javascript:
+1. Menggunakan cara biasa;
+2. Menggunakan ekspresi; Fungsi ini sebenarnya adalah fungsi anonim (anonymous function) atau fungsi tanpa nama.
+3. Menggunakan tanda panah (=>); cara ini disebut arrow function. 
+4. dan menggunakan Constructor.  kurang bagus, karena body fungsinya dibuat dalam bentuk string yang dapat mempengaruhi kinerja engine javascript. 
+===== untuk tahap pemula dapat dipakai cara pertama, selanjutnya bisa menggunakan cara ke-2 dan ke-3. =====
+
+4. OBJEK JAVASCRIPT 
+a. Objek sebenarnya adalah sebuah variabel yang menyimpan nilai (properti) dan fungsi (method). 
+b. objek pada javascript, dapat dibuat dengan tanda kurung kurawal dengan isi berupa key dan value. 
+c. properti adalah ciri khas dari objek (variabel). 
+d. method adalah perilaku dari objek (fungsi).
+e. Method dapat dibuat dengan cara mengisi nilai (value) dengan sebuah fungsi.
+f. cara mengakses properti dan method dari objek menggunakan tanda titik atau dot (.), dan diikuti dengan nama properti atau method.
+g. this digunakan untuk mengakses properti dan method dari dalam method (objek).
+ 
