@@ -1,0 +1,88 @@
+- AJAX merupakan singkatan dari Asynchronous Javascript And XML,
+diantaranya berfungsi untuk: 
+• Mengambil data dari server secara background; 
+• Update tampilan web tanpa harus relaod browser; 
+• Mengirim data ke server secara background.
+
+- Secara prinsip AJAX menggunakan objek XMLHttpRequest untuk
+berkomunikasi dengan server, untuk melihat proses AJAX dapat
+melalui inspect elemen pada browser, kemudian dengan membuka
+tab Network dan aktifkan filter XHR (XML HTTP Request). 
+
+- Pada singkatan di AJAX ada kata “XML”, tetapi bukan berarti hanya
+mendukung XML saja, karena AJAX juga mendukung format lain
+seperi JSON, Plain Text, maupun HTML. 
+
+- Pada praktikum 1, proses mengambil data dari file.txt dengan
+methode GET. kemudian hasilnya dimasukan ke dalam elemn <div
+id="hasil">, event yang digunakan adalah onreadystatechange,
+pada event ini bisa mengecek state dan status AJAX. 
+
+- Kode state 4 artinya done dan status 200 artinya sukses,
+Sementara untuk status header 200 adalah status HTTP Request.
+Biasanya kode di atas 200 artinya baik dan di bawah 200 artinya
+buruk.
+
+- Terdapat tiga parameter yang diberikan kepada method open(): 
+1. GET adalah metode request yang akan digunakan;
+2. url adalah alamat URL tujuan;
+3. true adalah untuk mengeksekusi AJAX secara asynchronous. 
+
+== AJAX menggunakan jQuery ==
+- JQuery adalah library Javascript yang menyederhanakan fungsi-
+fungsi Javascript.
+- fungsi JQuery load() cocok untuk mengambil bagian dari HTML untuk
+ditampilkan.
+
+== AJAX menggunakan fetch API ==
+Fetch artinya mengambil. Metode fetch bisa jadi alternatif untuk
+AJAX, methode ini mulai hadir pada Javascript versi ES6.
+Perbedaanya dengan XMLHttpRequest dan JQuery adalah: 
+• Fetch akan mengembalikan sebuah promise; 
+• Secara bawaan (default), fetch tidak akan mengirim atau
+menerima cookie dari server.  
+• Fetch dapat digunakan di web browser.
+
+== AJAX menggunakan AXIOS ==
+Axios hampir sama seperti fetch. Bedanya Axios adalah sebuah
+library sedangkan fetch adalah API yang tersedia di web browser.
+
+== Mengenal JSON == 
+- JSON (JavaScript Object Notation) adalah sebuah format data yang
+digunakan untuk pertukaran dan penyimpanan data. 
+
+- JSON merupakan bagian (subset) dari Javascript. JSON bisa dibaca
+dengan berbagai macam bahasa pemrograman seperti C, C++, C#,
+Java, Javascript Perl, Python, php dan banyak lagi, hal ini membuat
+JSON menjadi bahasa yang ideal untuk pertukaran data antar
+aplikasi dan kalau dibandingkan dengan XML, JSON lebih sederhana
+dan mudah dibaca.  
+
+- JSON biasanya digunakan sebagai format standar untuk bertukar
+data antar aplikasi. 
+ -Sebenarnya tidak hanya itu, masih ada fungsi lain dari JSON.
+Berikut ini beberapa penerapan JSON yang sering digunakan : 
+• JSON sebagai format untuk bertukar data client dan server
+atau antar aplikasi. Contoh: RESTful API; 
+• JSON sebagai tempat menyimpan data, contoh: Database
+Mongodb; 
+• JSON digunakan untuk menyimpan konfigurasi project, contoh:
+file composer.json pada project PHP dan package.json pada
+Nodejs; 
+• JSON digunakan untuk menyimpan konfigurasi dan
+penyimpanan data pada Hugo; 
+• JSON digunakan untuk menyimpan konfigurasi project pada
+Nodejs; 
+• JSON digunakan untuk menyimpan data menifest; 
+• dan masih banyak lagi. 
+
+- JSON selalu dimulai dengan tanda kurung kurawal { dan ditutup },
+kemudian di dalam kurung kurawal, berisi data yang
+format key dan value. Jika terdapat lebih dari satu data, maka
+dipisah dengan tanda koma dan di data terakhir tidak diberikan
+koma. 
+
+== Cara Pembuatan JSON ==
+- Setiap bahasa pemrograman memiliki cara yang berbeda-beda
+untuk membuat dan memakai JSON. Pada Javascript, bisa menggunakan fungsi 
+JSON.stringify() untuk membuat JSON dari objek Javascript
